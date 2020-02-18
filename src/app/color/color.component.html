@@ -1,0 +1,40 @@
+<div [hidden]="hd" [style.backgroundColor] = "color">
+
+  Cours d'Angular
+
+</div>
+
+<button class="btn btn-primary" (click)="SwipeHd()" >
+  Afficher / Cacher
+</button>
+<br>
+<input #input [(ngModel)]="color">
+
+<div appCustomDir class="cl">
+  <!-- couleur : {{ color }} -->
+  Test d'une directive
+</div>
+
+<app-child [color]="'pink'" (sendColor)="showAlert($event)"></app-child>
+
+<div [ngStyle]="{
+  'backgroundColor' : bgcolor,
+  'color' : txtcolor,
+  'font-family' : font
+}"
+>
+Test de NgStyle
+</div>
+
+<div [ngClass] = "{
+  'c1' : c1,
+  'c2' : c2,
+  'c3' : c3
+}"
+>
+Test de NgClass
+</div>
+
+<button class="btn btn-info" (click)="changeClass()">
+  Change Class
+</button>

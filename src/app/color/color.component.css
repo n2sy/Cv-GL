@@ -1,0 +1,18 @@
+.cl {
+    width: 200px;
+    height: 150px;
+}
+
+.c1 {
+    color : red;
+    background-color : yellow;
+}
+.c2 {
+    color : white;
+    background-color : blue;
+}
+.c3 {
+    color : grey;
+    background-color : pink;
+}
+
